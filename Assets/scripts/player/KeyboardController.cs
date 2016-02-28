@@ -127,10 +127,15 @@ public class KeyboardController : MonoBehaviour
             if (mouseX != 0)
             {
                 float rotationX = 5 * mouseX;
-                transform.Rotate(0, rotationX, 0);
-                //transform.rotation = Quaternion.AngleAxis(mouseDelta, Vector3.up);
+                transform.Rotate(Vector3.up, rotationX);
+                //transform.Rotate(Vector3.right, rotationX);
+
+
+
             }
         }
+       // else
+           // transform.rotation = Quaternion.EulerRotation(0, transform.rotation.y, transform.rotation.z * 0.95f);
 
         /*if (yaw.isActivated())
         {
